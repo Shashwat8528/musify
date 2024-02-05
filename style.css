@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: rgba(0, 0, 0, 0.863);
+}
+video{
+    height: 1000px;
+    width: 1600px;
+    object-fit: cover;
+    z-index: -1;
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    position: sticky;
+    top: 0;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 65px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    z-index: 20 ;
+}
+
+nav ul li{
+    padding: 0 12px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+    border-radius: 20px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+    color: green;
+    transition: transform 0.2s;
+}
+.brand:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.container{
+    min-height: 72vh;
+    background-color: rgba(0, 0, 0, 0.55);
+    color: white;
+    font-family: 'Varela Round', sans-serif;
+    display: flex;
+    margin: 23px auto;
+    width: 100%;
+    border-radius: 12px;
+    padding: 34px;
+}
+
+.bottom{
+    border-radius: 15px;
+    position: sticky;
+    bottom: 0;
+    height: 100px;
+    background-color: rgba(0, 0, 0, 0.881);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    width: 100%;
+}
+.navwork{
+    transition: transform 0.2s;
+}
+.navwork:hover{
+    transform: scale(1.3);
+    cursor: pointer;
+}
+
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
+#myProgressBar{
+    width: 80vw; 
+    cursor: pointer;
+}
+
+.songItemContainer{
+    margin-top: 74px;
+    display: grid;
+    grid-template-columns: repeat(8,185px);
+}
+
+.songItem{
+    height: 150px;
+    width: 150px;
+    background-color: white;
+    color: rgba(255, 255, 255, 0.089);
+    margin: 12px 0;
+    border-radius: 34px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.2s;
+    box-shadow: 10px 10px 10px;
+}
+.songName{
+    font-size: 20px;
+    font-weight: 1000;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.297);
+    width: 100%;
+    border-radius: 20px;
+    margin: 2px;
+    text-align: center;
+}
+.songItem:hover{
+    transform: scale(1.1);
+}
+.songListPlay{
+    color: white;
+}
+i.songItemPlay{
+    font-size: 50px;
+    margin: 10px;
+    transition: transform,color,opacity 0.2s;
+    color: rgb(0, 255, 98);
+    opacity: 0.1;
+}
+i.songItemPlay:hover{
+    transform: scale(1.5);
+    color: rgb(1, 255, 69);
+    opacity: 1;
+}
+
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute;
+    left: 10vw;
+    font-family: 'Varela Round', sans-serif;
+}
+.imagehide{
+    opacity: 0;
+}
+
+.songInfo img{
+    opacity: 0;
+    transition: opacity 0.4s ease-in;
+}
+#previous{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform,color 0.1s;
+}
+#previous:hover{
+    color: green;
+    transform: scale(1.1);
+}
+#masterPlay:hover{
+    color: green;
+    transform: scale(1.1);
+}
+#next:hover{
+    color: green;
+    transform: scale(1.1);
+}
+#masterPlay{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform,color 0.1s;
+}
+#next{
+    font-size: 30px;
+    margin-left: 10px;
+    margin-right: 10px;
+    transition: transform,color 0.1s;
+}
+#a1{
+    background-image: url(covers/1.jpg);
+    background-size: cover;
+}
+#a2{
+    background-image: url(covers/2.jpg);
+    background-size: cover;
+}
+#a3{
+    background-image: url(covers/3.jpg);
+    background-size: cover;
+}
+#a4{
+    background-image: url(covers/4.jpg);
+    background-size: cover;
+}
+#a5{
+    background-image: url(covers/5.jpg);
+    background-size: cover;
+}
+#a6{
+    background-image: url(covers/6.jpg);
+    background-size: cover;
+}
+#a7{
+    background-image: url(covers/7.jpg);
+    background-size: cover;
+}
+#a8{
+    background-image: url(covers/8.jpg);
+    background-size: cover;
+}
+#a9{
+    background-image: url(covers/9.jpg);
+    background-size: cover;
+}
+#a10{
+    background-image: url(covers/10.jpg);
+    background-size: cover;
+}
+#a11{
+    background-image: url(covers/11.jpg);
+    background-size: cover;
+}
+#a12{
+    background-image: url(covers/12.jpg);
+    background-size: cover;
+}
+#a13{
+    background-image: url(covers/13.jpg);
+    background-size: cover;
+}
+#a14{
+    background-image: url(covers/14.jpg);
+    background-size: cover;
+}
+#a15{
+    background-image: url(covers/15.jpg);
+    background-size: cover;
+}
+#a16{
+    background-image: url(covers/16.jpg);
+    background-size: cover;
+}
+#a17{
+    background-image: url(covers/17.jpg);
+    background-size: cover;
+}
+#a18{
+    background-image: url(covers/18.jpg);
+    background-size: cover;
+}
+#a19{
+    background-image: url(covers/19.jpg);
+    background-size: cover;
+}
+#a20{
+    background-image: url(covers/20.jpg);
+    background-size: cover;
+}
+#a21{
+    background-image: url(covers/21.jpg);
+    background-size: cover;
+}
+
+/* @media only screen and (max-width: 1100px) {
+    body {
+      background-color: red;
+    }
+  } */
