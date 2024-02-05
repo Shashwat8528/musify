@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 100px;
+            background-color: rgba(1, 150, 125, 0.279);
+        }
+        .main{
+            color: black;
+            border-radius: 20px;
+            box-shadow: 10px 10px 10px;
+            transition: transform 0.3s;
+        }
+        div.container{
+            padding: 50px;
+            border-radius: 20px;
+            color: white;
+            background-color: rgba(1, 27, 2, 0.89);
+            transition: transform 0.2s;
+        }
+        h1{
+            background: linear-gradient(45deg,rgba(46, 73, 47, 0.801),rgba(48, 255, 1, 0.938));
+            border-radius: 15px;
+            padding: 10px;
+        }
+        p{
+            font-size: 30px;
+        }
+        #un,#pw{
+            border-radius: 10px;
+            height: 30px;
+            width: 200px;
+            border: 0px;
+            box-shadow: 5px 5px 5px;
+        }
+        .alter{
+            width: 100%;
+            height: 30px;
+            margin: 5px;
+            background: transparent;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            transition: color,transform 0.1s;
+        }
+        .alter:hover{
+            cursor: pointer;
+            color: rgb(55, 55, 252);
+            transform: scale(1.08);
+        }
+        #sub{
+            width: 68%;
+            height: 30px;
+            margin-top: 20px;
+            border-radius: 10px;
+            background-color: rgba(0, 0, 0, 0.377);
+            color: white;
+            font-size: 20px;
+            border:none;
+            transition: transform 0.3s;
+            cursor: pointer;
+        }
+        #sub:hover{
+            transform: scale(1.1);
+        }
+        .container:hover{
+            transform: scale(1.02);
+        }
+        .main:hover{
+            transform: scale(1.02);
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="container">
+            <h1>Welcome To Musify!</h1>
+            <hr>
+            <p>Username</p>
+            <input type="text" id="un">
+            <p>Password</p>
+            <input type="text" id="pw">
+            <div class="sign">
+                <button id="sub" onclick="check()">Submit</button>
+                <br>
+                <button class="alter">Forgot Passoword</button>
+                <br>
+                <button class="alter">Sign In</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        function check(){
+            var x = document.getElementById('un').value;
+            var y = document.getElementById('pw').value;
+            if(x === "Username" && y === "Password"){
+                window.location.href = "index.html"; 
+            }
+            else{
+                alert('Wrong Username or Password');
+            }
+        }
+    </script>
+</body>
+</html>
